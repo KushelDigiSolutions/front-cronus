@@ -2346,6 +2346,10 @@ color: #444444;
 .maketicol ul{
   justify-content: initial !important;
 }
+.tight_bar{
+  height: 500px;
+  overflow-y: scroll;
+}
 .nav_img {
   margin-top: 30px;
 }

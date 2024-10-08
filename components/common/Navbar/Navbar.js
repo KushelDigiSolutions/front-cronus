@@ -1396,7 +1396,7 @@ export default function Navbar(props) {
                           </ul>
                         </div>
 
-                        <div className="sidebar_nav2">
+                        <div className="sidebar_nav2 tight_bar">
                           {start1 === 1 && (
                             <div>
                               <div className="some addgaps">

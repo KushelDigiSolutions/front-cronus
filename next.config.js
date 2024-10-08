@@ -1,15 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
-    NEXTAUTH_SECRET:"Instacertify",
-    NEXTAUTH_URL:"https://isntafront.kusheldigi.com/",
+    NEXTAUTH_SECRET:"Cronus-pro",
+    NEXTAUTH_URL:"https://front.cronuspro.in/",
     next:{
-      api_url:"https://isntafront.kusheldigi.com/api/v1/"
+      api_url:"https://front.cronuspro.in/api/v1/"
     },
 
     server : {
-		path:"https://instacertify.kusheldigi.com/",
-   		api:"https://instacertify.kusheldigi.com/api/",
+		path:"https://back.cronuspro.in/",
+   		api:"https://back.cronuspro.in/api/",
       	jwt_secret:"UOUkeFnqauTf3qw0Hy6pv1JQq572l82gRBgnNbemPEjV2bTG2Bg0A3avm1svL9gs"
     }
   },
@@ -21,7 +21,7 @@ const nextConfig = {
     ignoreDuringBuilds: true
   },
   images: {
-    domains: ['instacertify.kusheldigi.com','cdn11.bigcommerce.com'],
+    domains: ['back.cronuspro.in','cdn11.bigcommerce.com'],
   }
 }
 
