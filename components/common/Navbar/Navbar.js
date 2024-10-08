@@ -13,7 +13,7 @@ import GlobalLogout from "../svg/global/logout";
 import GlobalLogin from "../svg/global/login";
 import { useSession } from "next-auth/react";
 import { MdKeyboardArrowDown } from "react-icons/md";
-
+// import { MdKeyboardArrowDown } from "react-icons/md";
 import { IoReorderThreeOutline } from "react-icons/io5";
 
 import GlobalOrder from "../svg/global/order";
@@ -626,6 +626,13 @@ export default function Navbar(props) {
 
     const [showFirstlvl , setShowFirLvl] = useState(false);
     const [showSecLvl , setShowSecLvl] = useState(false);
+
+    const [someopen1 , setshowopen1] = useState(false);
+    const [someopen2 , setshowopen2] = useState(false);
+    const [someopen3 , setshowopen3] = useState(false);
+    const [someopen4 , setshowopen4] = useState(false);
+    const [someopen5 , setshowopen5] = useState(false);
+    const [someopen6 , setshowopen6] = useState(false);
 
     return (
       <>
@@ -1381,34 +1388,58 @@ export default function Navbar(props) {
                           <ul className="certify">
                             <li id="one" onClick={fab1} className="cert">
                               <span id="ek" className="sft tft">
-                                Cronus Pro
+                              Kratos
                               </span>
                             </li>
-                            <li id="two" onClick={fab2}>
-                              <span id="ek1" className="sft">
-                                Cronus Lite
-                              </span>
-                            </li>
-                            {/* <li id="three" onClick={tab3}>
-                            <span id="ek2" className="sft">Punta</span>
-                          </li>
-
-                          <li id="four" onClick={tab4}>
-                            <span id="ek3" className="sft">Crocodell</span>
-                          </li> */}
+                          
                           </ul>
                         </div>
 
                         <div className="sidebar_nav2">
                           {start1 === 1 && (
                             <div>
-                              <div className="some">
-                                <span>Triumph</span>
+                              <div className="some addgaps">
+                                <span>Movies</span>
+                                <span>Studio</span>
                               </div>
+                            
                               <div className="img_item">
-                                <div className="nav_img">
-                                  <ul>
+                                <div className="nav_img maketicol" >
+
+                                  <ul className="make_url jflkds">
                                     <li>
+
+                                      <a
+                                        onMouseOver={() => {
+                                          setSus(true);
+                                        }}
+                                        onMouseOut={() => {
+                                          setSus(false);
+                                        }}
+                                        // href=""
+                                        onClick={()=>setshowopen1(!someopen1)}
+                                      >
+                                   Tripod Kits <MdKeyboardArrowDown />
+
+                                      </a>
+
+                                      {
+                                         someopen1 && 
+                                          <div className="wrapss">
+                                            <p>MV45G-AL</p>
+                                            <p>MV30G-AL</p>
+                                          </div>
+                                      }
+                                     
+                                    </li>
+
+                                    
+                                  
+                                  </ul>
+
+                                  <ul className="make_url">
+                                    <li>
+
                                       <a
                                         onMouseOver={() => {
                                           setSus(true);
@@ -1417,68 +1448,134 @@ export default function Navbar(props) {
                                           setSus(false);
                                         }}
                                         href=""
+                                        onClick={()=>setshowopen2(!someopen2)}
                                       >
-                                        Triumph 24
+                                   Tripod Head <MdKeyboardArrowDown />
+
                                       </a>
+
+                                      {
+                                         someopen2 && 
+                                          <div className="wrapss">
+                                            <p>MV45 ( 150 mm )</p>
+                                            <p>MV45 ( 150 mm )</p>
+                                            <p>MV45 ( 150 mm )</p>
+                                            <p>MV45 ( 150 mm )</p>
+                                            <p>MV45 ( 150 mm )</p>
+                                            <p>MV45 ( 150 mm )</p>
+                                           
+                                          </div>
+                                      }
+                                     
                                     </li>
                                     <li>
+
                                       <a
                                         onMouseOver={() => {
-                                          setSus1(true);
+                                          setSus(true);
                                         }}
                                         onMouseOut={() => {
-                                          setSus1(false);
+                                          setSus(false);
                                         }}
                                         href=""
+                                        onClick={()=>setshowopen3(!someopen3)}
                                       >
-                                        Triumph 21
+                                   Tripod Kits <MdKeyboardArrowDown />
+
                                       </a>
+
+                                      {
+                                         someopen3 && 
+                                          <div className="wrapss">
+                                            <p>MV45G-AL</p>
+                                            <p>MV30G-AL</p>
+                                          </div>
+                                      }
+                                     
                                     </li>
-                                  </ul>
-                                  <ul>
                                     <li>
+
                                       <a
                                         onMouseOver={() => {
-                                          setSus2(true);
+                                          setSus(true);
                                         }}
                                         onMouseOut={() => {
-                                          setSus2(false);
+                                          setSus(false);
+                                        }}
+                                        href="#"
+                                        onClick={()=>setshowopen4(!someopen4)}
+                                      >
+                                   Pedestal <MdKeyboardArrowDown />
+
+                                      </a>
+
+                                      {
+                                         someopen4 && 
+                                          <div className="wrapss">
+                                            <p>MV45G-AL</p>
+                                            <p>MV30G-AL</p>
+                                          </div>
+                                      }
+                                     
+                                    </li>
+                                    <li>
+
+                                      <a
+                                        onMouseOver={() => {
+                                          setSus(true);
+                                        }}
+                                        onMouseOut={() => {
+                                          setSus(false);
                                         }}
                                         href=""
+                                        onClick={()=>setshowopen5(!someopen5)}
                                       >
-                                        Triumph 19
+                                   Dolly <MdKeyboardArrowDown />
+
                                       </a>
+
+                                      {
+                                         someopen5 && 
+                                          <div className="wrapss">
+                                            <p>MV45G-AL</p>
+                                            <p>MV30G-AL</p>
+                                          </div>
+                                      }
+                                     
                                     </li>
                                     <li>
+
                                       <a
                                         onMouseOver={() => {
-                                          setSus3(true);
+                                          setSus(true);
                                         }}
                                         onMouseOut={() => {
-                                          setSus3(false);
+                                          setSus(false);
                                         }}
                                         href=""
+                                        onClick={()=>setshowopen6(!someopen6)}
                                       >
-                                        Triumph 17
+                                   Pan Bar <MdKeyboardArrowDown />
+
                                       </a>
+
+                                      {
+                                         someopen6 && 
+                                          <div className="wrapss">
+                                            <p>MV45G-AL</p>
+                                            <p>MV30G-AL</p>
+                                          </div>
+                                      }
+                                     
                                     </li>
+
+                                    
+                                  
                                   </ul>
-                                  <ul>
-                                    <li>
-                                      <a
-                                        onMouseOver={() => {
-                                          setSus4(true);
-                                        }}
-                                        onMouseOut={() => {
-                                          setSus4(false);
-                                        }}
-                                        href={"/food-testing"}
-                                      >
-                                        Triumph 15
-                                      </a>
-                                    </li>
-                                  </ul>
+                         
+                           
                                 </div>
+
                                 <div className="logo_img">
                                   <div style={styleoff1} className="softisf">
                                     <p style={styleoff1}>Triumph 24</p>
@@ -1529,98 +1626,12 @@ export default function Navbar(props) {
                                     />
                                   </div>
                                 </div>
+
                               </div>
                             </div>
                           )}
 
-                          {start1 === 2 && (
-                            <div>
-                              <div className="some">
-                                <span>Delta Prompt </span>
-                              </div>
-                              <div className="img_item">
-                                <div className="nav_img">
-                                  <ul>
-                                    <li>
-                                      <a
-                                        onMouseOver={() => {
-                                          setSus(true);
-                                        }}
-                                        onMouseOut={() => {
-                                          setSus(false);
-                                        }}
-                                        href=""
-                                      >
-                                        Delta Prompt 19
-                                      </a>
-                                    </li>
-                                    <li>
-                                      <a
-                                        onMouseOver={() => {
-                                          setSus1(true);
-                                        }}
-                                        onMouseOut={() => {
-                                          setSus1(false);
-                                        }}
-                                        href=""
-                                      >
-                                        Delta Prompt 17
-                                      </a>
-                                    </li>
-                                  </ul>
-                                  <ul>
-                                    <li>
-                                      <a
-                                        onMouseOver={() => {
-                                          setSus2(true);
-                                        }}
-                                        onMouseOut={() => {
-                                          setSus2(false);
-                                        }}
-                                        href=""
-                                      >
-                                        Delta Prompt 15
-                                      </a>
-                                    </li>
-                                  </ul>
-                                </div>
-                                <div className="logo_img">
-                                  <div style={styleoff1} className="softisf">
-                                    <p style={styleoff1}>Delta Prompt 19</p>
-                                    <img
-                                      style={styleoff1}
-                                      src="./images/sevas.svg"
-                                      alt=""
-                                    />
-                                  </div>
-                                  <div style={styleOff} className="softisf">
-                                    <p style={styleOff}>Delta Prompt 19</p>
-                                    <img
-                                      style={styleOff}
-                                      src="./images/sevas.svg"
-                                      alt=""
-                                    />
-                                  </div>
-                                  <div style={styleoff2} className="softisf">
-                                    <p style={styleoff2}>Delta Prompt 17</p>
-                                    <img
-                                      style={styleoff2}
-                                      src="./images/sevas.svg"
-                                      alt=""
-                                    />
-                                  </div>
-                                  <div style={styleoff3} className="softisf">
-                                    <p style={styleoff3}>Delta Prompt 15</p>
-                                    <img
-                                      style={styleoff3}
-                                      src="./images/sevas.svg"
-                                      alt=""
-                                    />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          )}
+                     
                         </div>
                       </div>
                     )}
@@ -1666,6 +1677,7 @@ export default function Navbar(props) {
                     {/* <Link href={"/contact"} className={`${currentPath === "/contact" ? "makecolor2" : ""} `}>  </Link> */}
                     <IoSearch className="IoSearch" />
                   </li>
+
                 </ul>
               </div>
 
