@@ -2133,7 +2133,7 @@ button {
 .wrapss{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   margin-top: 10px;
 }
 
@@ -2146,6 +2146,9 @@ color: #444444;
 }
 .wrapss P:hover{
   color: #EA9419;
+}
+.wrapss p{
+  margin-bottom: 0rem !important;
 }
 .make_url li{
   display: flex;

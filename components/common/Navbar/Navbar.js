@@ -93,16 +93,16 @@ export default function Navbar(props) {
   const styleoff1 = {
     display:
       sus ||
-      sus1 ||
-      sus2 ||
-      sus3 ||
-      sus4 ||
-      sus5 ||
-      sus6 ||
-      sus7 ||
-      sus8 ||
-      sus9 ||
-      sus10
+        sus1 ||
+        sus2 ||
+        sus3 ||
+        sus4 ||
+        sus5 ||
+        sus6 ||
+        sus7 ||
+        sus8 ||
+        sus9 ||
+        sus10
         ? "none"
         : "block",
   };
@@ -143,16 +143,16 @@ export default function Navbar(props) {
   const styleji1 = {
     display:
       pus ||
-      pus1 ||
-      pus2 ||
-      pus3 ||
-      pus4 ||
-      pus5 ||
-      pus6 ||
-      pus7 ||
-      pus8 ||
-      pus9 ||
-      pus10
+        pus1 ||
+        pus2 ||
+        pus3 ||
+        pus4 ||
+        pus5 ||
+        pus6 ||
+        pus7 ||
+        pus8 ||
+        pus9 ||
+        pus10
         ? "none"
         : "block",
   };
@@ -624,15 +624,16 @@ export default function Navbar(props) {
       },
     ];
 
-    const [showFirstlvl , setShowFirLvl] = useState(false);
-    const [showSecLvl , setShowSecLvl] = useState(false);
+    const [showFirstlvl, setShowFirLvl] = useState(false);
+    const [showSecLvl, setShowSecLvl] = useState(false);
 
-    const [someopen1 , setshowopen1] = useState(false);
-    const [someopen2 , setshowopen2] = useState(false);
-    const [someopen3 , setshowopen3] = useState(false);
-    const [someopen4 , setshowopen4] = useState(false);
-    const [someopen5 , setshowopen5] = useState(false);
-    const [someopen6 , setshowopen6] = useState(false);
+    const [someopen1, setshowopen1] = useState(false);
+    const [someopen11, setshowopen11] = useState(false);
+    const [someopen2, setshowopen2] = useState(false);
+    const [someopen3, setshowopen3] = useState(false);
+    const [someopen4, setshowopen4] = useState(false);
+    const [someopen5, setshowopen5] = useState(false);
+    const [someopen6, setshowopen6] = useState(false);
 
     return (
       <>
@@ -1158,7 +1159,7 @@ export default function Navbar(props) {
                                 Cronus Lite
                               </span>
                             </li>
-                           
+
                           </ul>
                         </div>
 
@@ -1388,10 +1389,10 @@ export default function Navbar(props) {
                           <ul className="certify">
                             <li id="one" onClick={fab1} className="cert">
                               <span id="ek" className="sft tft">
-                              Kratos
+                                Kratos
                               </span>
                             </li>
-                          
+
                           </ul>
                         </div>
 
@@ -1402,7 +1403,7 @@ export default function Navbar(props) {
                                 <span>Movies</span>
                                 <span>Studio</span>
                               </div>
-                            
+
                               <div className="img_item">
                                 <div className="nav_img maketicol" >
 
@@ -1417,24 +1418,81 @@ export default function Navbar(props) {
                                           setSus(false);
                                         }}
                                         // href=""
-                                        onClick={()=>setshowopen1(!someopen1)}
+                                        onClick={() =>{
+                                          setshowopen1(!someopen1);
+                                          setshowopen2(false)
+                                          setshowopen3(false)
+                                          setshowopen4(false)
+                                          setshowopen5(false)
+                                          setshowopen6(false)
+                                        } }
                                       >
-                                   Tripod Kits <MdKeyboardArrowDown />
+                                        Tripod Kits <MdKeyboardArrowDown />
 
                                       </a>
 
                                       {
-                                         someopen1 && 
-                                          <div className="wrapss">
-                                            <p>MV45G-AL</p>
-                                            <p>MV30G-AL</p>
-                                          </div>
+                                        someopen1 &&
+                                        <div className="wrapss">
+                                          <p>MV45G-AL</p>
+                                          <p>MV30G-AL</p>
+                                          <p>EN35G-AL</p>
+                                          <p>EN30G-AL</p>
+                                          <p>EN25G-AL</p>
+                                          <p>EN18G-AL</p>
+                                          <p>EN18G-CF</p>
+                                          <p>EN15G-AL</p>
+                                          <p>EN15G-CF</p>
+                                          <p>EN12G-AL</p>
+                                          <p>EN12G-CF</p>
+                                          <p>EN8G-AL</p>
+                                          <p>EN8G-CF</p>
+                                          <p>EN5G-AL</p>
+                                          <p>EN5G-CF</p>
+                                          <p>LT8G-AL</p>
+                                          <p>LT5M-AL</p>
+                                          <p>LT5M-CF</p>
+                                        </div>
                                       }
-                                     
+
                                     </li>
 
-                                    
-                                  
+                                    <li>
+
+                                      <a
+                                        onMouseOver={() => {
+                                          setSus(true);
+                                        }}
+                                        onMouseOut={() => {
+                                          setSus(false);
+                                        }}
+                                        // href=""
+                                        onClick={() => {
+                                          setshowopen11(!someopen11)
+                                          setshowopen1(false);
+                                          setshowopen2(false)
+                                          setshowopen3(false)
+                                          setshowopen4(false)
+                                          setshowopen5(false)
+                                          setshowopen6(false)
+                                        }}
+                                      >
+                                        Pedestal <MdKeyboardArrowDown />
+
+                                      </a>
+
+                                      {
+                                        someopen11 &&
+                                        <div className="wrapss">
+                                          <p>PDC ( 100 mm )</p>
+                                          <p>PDCL ( 150 mm )</p>
+                                        </div>
+                                      }
+
+                                    </li>
+
+
+
                                   </ul>
 
                                   <ul className="make_url">
@@ -1447,26 +1505,124 @@ export default function Navbar(props) {
                                         onMouseOut={() => {
                                           setSus(false);
                                         }}
-                                        href=""
-                                        onClick={()=>setshowopen2(!someopen2)}
+                                        // href=""
+                                        onClick={() =>{
+                                          setshowopen2(!someopen2)
+                                          setshowopen11(false)
+                                          setshowopen1(false);
+                                          setshowopen3(false)
+                                          setshowopen4(false)
+                                          setshowopen5(false)
+                                          setshowopen6(false)
+                                        } }
                                       >
-                                   Tripod Head <MdKeyboardArrowDown />
+                                        Tripod Head <MdKeyboardArrowDown />
 
                                       </a>
 
                                       {
-                                         someopen2 && 
-                                          <div className="wrapss">
-                                            <p>MV45 ( 150 mm )</p>
-                                            <p>MV45 ( 150 mm )</p>
-                                            <p>MV45 ( 150 mm )</p>
-                                            <p>MV45 ( 150 mm )</p>
-                                            <p>MV45 ( 150 mm )</p>
-                                            <p>MV45 ( 150 mm )</p>
-                                           
-                                          </div>
+                                        someopen2 &&
+                                        <div className="wrapss">
+                                          <p>MV45 ( 150 mm )</p>
+                                          <p>MV30 ( 150 mm )</p>
+                                          <p>EN35  ( 150 mm )</p>
+                                          <p>EN30  ( 150 mm )</p>
+                                          <p>EN25  ( 100 mm )</p>
+                                          <p>EN18  ( 100 mm )</p>
+                                          <p>EN15  ( 100 mm ) </p>
+                                          <p>EN12  ( 75 mm )</p>
+                                          <p>EN8    ( 75 mm )</p>
+                                          <p>EN5    ( 60 mm )</p>
+                                          <p>LT8     ( 60 mm )</p>
+                                          <p>LT5     ( 60 mm )</p>
+                                        </div>
                                       }
-                                     
+
+                                    </li>
+                                    {/* <li>
+
+                                      <a
+                                        onMouseOver={() => {
+                                          setSus(true);
+                                        }}
+                                        onMouseOut={() => {
+                                          setSus(false);
+                                        }}
+                                        // href=""
+                                        onClick={() => setshowopen3(!someopen3)}
+                                      >
+                                        Tripod Kits <MdKeyboardArrowDown />
+
+                                      </a>
+
+                                      {
+                                        someopen3 &&
+                                        <div className="wrapss">
+                                          <p>MV45G-AL</p>
+                                          <p>MV30G-AL</p>
+                                        </div>
+                                      }
+
+                                    </li> */}
+                                    {/* <li>
+
+                                      <a
+                                        onMouseOver={() => {
+                                          setSus(true);
+                                        }}
+                                        onMouseOut={() => {
+                                          setSus(false);
+                                        }}
+                                        // href="#"
+                                        onClick={() => setshowopen4(!someopen4)}
+                                      >
+                                        Pedestal <MdKeyboardArrowDown />
+
+                                      </a>
+
+                                      {
+                                        someopen4 &&
+                                        <div className="wrapss">
+                                          <p>MV45G-AL</p>
+                                          <p>MV30G-AL</p>
+                                        </div>
+                                      }
+
+                                    </li> */}
+                                    <li>
+
+                                      <a
+                                        onMouseOver={() => {
+                                          setSus(true);
+                                        }}
+                                        onMouseOut={() => {
+                                          setSus(false);
+                                        }}
+                                        // href=""
+                                        onClick={() => {
+                                          setshowopen5(!someopen5)
+                                          setshowopen2(false)
+                                          setshowopen11(false)
+                                          setshowopen1(false);
+                                          setshowopen3(false)
+                                          setshowopen4(false)
+                                          setshowopen6(false)
+                                        }}
+                                      >
+                                        Dolly <MdKeyboardArrowDown />
+
+                                      </a>
+
+                                      {
+                                        someopen5 &&
+                                        <div className="wrapss">
+                                          <p>D150</p>
+                                          <p>D100</p>
+                                          <p>D50</p>
+                                          <p>D30</p>
+                                        </div>
+                                      }
+
                                     </li>
                                     <li>
 
@@ -1477,103 +1633,36 @@ export default function Navbar(props) {
                                         onMouseOut={() => {
                                           setSus(false);
                                         }}
-                                        href=""
-                                        onClick={()=>setshowopen3(!someopen3)}
+                                        // href=""
+                                        onClick={() =>{
+                                          setshowopen6(!someopen6)
+                                          setshowopen5(false)
+                                          setshowopen2(false)
+                                          setshowopen11(false)
+                                          setshowopen1(false);
+                                          setshowopen3(false)
+                                          setshowopen4(false)
+                                        }}
                                       >
-                                   Tripod Kits <MdKeyboardArrowDown />
+                                        Pan Bar <MdKeyboardArrowDown />
 
                                       </a>
 
                                       {
-                                         someopen3 && 
-                                          <div className="wrapss">
-                                            <p>MV45G-AL</p>
-                                            <p>MV30G-AL</p>
-                                          </div>
+                                        someopen6 &&
+                                        <div className="wrapss">
+                                          <p>PAN BAR 1</p>
+                                          <p>PAN BAR 2</p>
+                                        </div>
                                       }
-                                     
-                                    </li>
-                                    <li>
 
-                                      <a
-                                        onMouseOver={() => {
-                                          setSus(true);
-                                        }}
-                                        onMouseOut={() => {
-                                          setSus(false);
-                                        }}
-                                        href="#"
-                                        onClick={()=>setshowopen4(!someopen4)}
-                                      >
-                                   Pedestal <MdKeyboardArrowDown />
-
-                                      </a>
-
-                                      {
-                                         someopen4 && 
-                                          <div className="wrapss">
-                                            <p>MV45G-AL</p>
-                                            <p>MV30G-AL</p>
-                                          </div>
-                                      }
-                                     
-                                    </li>
-                                    <li>
-
-                                      <a
-                                        onMouseOver={() => {
-                                          setSus(true);
-                                        }}
-                                        onMouseOut={() => {
-                                          setSus(false);
-                                        }}
-                                        href=""
-                                        onClick={()=>setshowopen5(!someopen5)}
-                                      >
-                                   Dolly <MdKeyboardArrowDown />
-
-                                      </a>
-
-                                      {
-                                         someopen5 && 
-                                          <div className="wrapss">
-                                            <p>MV45G-AL</p>
-                                            <p>MV30G-AL</p>
-                                          </div>
-                                      }
-                                     
-                                    </li>
-                                    <li>
-
-                                      <a
-                                        onMouseOver={() => {
-                                          setSus(true);
-                                        }}
-                                        onMouseOut={() => {
-                                          setSus(false);
-                                        }}
-                                        href=""
-                                        onClick={()=>setshowopen6(!someopen6)}
-                                      >
-                                   Pan Bar <MdKeyboardArrowDown />
-
-                                      </a>
-
-                                      {
-                                         someopen6 && 
-                                          <div className="wrapss">
-                                            <p>MV45G-AL</p>
-                                            <p>MV30G-AL</p>
-                                          </div>
-                                      }
-                                     
                                     </li>
 
-                                    
-                                  
+
+
                                   </ul>
-                         
-                           
+
+
                                 </div>
 
                                 <div className="logo_img">
@@ -1631,7 +1720,7 @@ export default function Navbar(props) {
                             </div>
                           )}
 
-                     
+
                         </div>
                       </div>
                     )}
@@ -1640,9 +1729,8 @@ export default function Navbar(props) {
                   <li>
                     <Link
                       href={"/aboutus"}
-                      className={`${
-                        currentPath === "/aboutus" ? "makecolor2" : ""
-                      }`}
+                      className={`${currentPath === "/aboutus" ? "makecolor2" : ""
+                        }`}
                     >
                       {" "}
                       Telephone Hybrid
@@ -1652,9 +1740,8 @@ export default function Navbar(props) {
                   <li>
                     <Link
                       href={"/aboutus"}
-                      className={`${
-                        currentPath === "/aboutus" ? "makecolor2" : ""
-                      }`}
+                      className={`${currentPath === "/aboutus" ? "makecolor2" : ""
+                        }`}
                     >
                       {" "}
                       Video Light{" "}
@@ -1664,9 +1751,8 @@ export default function Navbar(props) {
                   <li className="contactusbutton">
                     <Link
                       href={"/contact"}
-                      className={`${
-                        currentPath === "/contact" ? "makecolor2" : ""
-                      } `}
+                      className={`${currentPath === "/contact" ? "makecolor2" : ""
+                        } `}
                     >
                       {" "}
                       <span>Contact Us</span>{" "}
@@ -1697,36 +1783,36 @@ export default function Navbar(props) {
                       <div key={index} className="singlesideba firstlayer">
                         <h3>{item1?.title}</h3>
                         {item1?.subtitle && (
-                          <MdKeyboardArrowDown onClick={()=>{
-                             if(showFirstlvl === index){
+                          <MdKeyboardArrowDown onClick={() => {
+                            if (showFirstlvl === index) {
                               setShowFirLvl(false);
                               setShowSecLvl(false);
-                             }
-                             else{
+                            }
+                            else {
                               setShowFirLvl(index);
-                             }
+                            }
                           }} className="downarrwoad" />
                         )}
                       </div>
 
-                      {(item1?.subtitle && showFirstlvl === index )&&
+                      {(item1?.subtitle && showFirstlvl === index) &&
                         item1?.subtitle?.map((item2, index) => (
                           <div>
                             <div key={index} className="singlesideba secoondlayer">
                               <h3>{item2?.title}</h3>
                               {item2?.subtitle && (
-                                <MdKeyboardArrowDown onClick={()=>{
-                                  if(showSecLvl === index){
+                                <MdKeyboardArrowDown onClick={() => {
+                                  if (showSecLvl === index) {
                                     setShowSecLvl(false);
                                   }
-                                  else{
+                                  else {
                                     setShowSecLvl(index);
                                   }
                                 }} className="downarrwoad" />
                               )}
                             </div>
 
-                            {(item2?.subtitle && showSecLvl===index) &&
+                            {(item2?.subtitle && showSecLvl === index) &&
                               item2?.subtitle?.map((item3, index) => (
                                 <div key={index} className="singlesideba thirdlayer">
                                   <h3>{item3?.title}</h3>
@@ -1736,7 +1822,7 @@ export default function Navbar(props) {
                           </div>
                         ))}
 
-                      {}
+                      { }
                     </div>
                   ))}
                 </div>
