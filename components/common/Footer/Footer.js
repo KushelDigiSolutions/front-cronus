@@ -13,6 +13,7 @@ import Image from 'next/image';
 // import ins4 from '../../../public/images/insta.svg'
 
 import twitter from '../../../components/img/twitter.svg'
+import { subtle } from 'crypto';
 
 export default function Footer(footerProps) {
   if (typeof footerProps.footerProps == "undefined" || footerProps.footerProps == false) { return ""; }
@@ -162,14 +163,15 @@ export default function Footer(footerProps) {
                 <div className='fir'>
                   <div className="widget widget_getintuch" height="240px">
                     <div className='foot_logs'>
-                      <img src='../images/sells.svg' />
+                      <img src={footerData?.footer_logo} />
                     </div>
 
 
                     <ul className="contactus-footer font-opensans">
                       <div className='foot_text'>
-                        <p>
+                        <p >
                           Currently accepting enquiries for all your needs and looking for Distributors from all over the Globe
+                          {/* {footerData?.sub_title} */}
                         </p>
                       </div>
                     </ul>
@@ -222,75 +224,70 @@ export default function Footer(footerProps) {
                 } */}
 
 
-
-                <div className="fir">
-                  <div className="widget">
-                    <h4 className="footer-title jk_tit">Teleprompter</h4>
-                    <ul className="list-2 uppercase font-opensans lopl"
-                    >
-                      {/* <marquee
-                        behavior="scroll"
-                        direction="up"
-                        scrollamount={2}
-                        height="250px"
-                        onmouseover="this.stop()"
-                        onmouseout="this.start()"
-                      > */}
-                      <li>
-                        {/* <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.00341941 11.9551C1.25998 11.8608 2.52204 11.8148 3.77091 11.6581C4.9813 11.5057 6.19498 11.3073 7.37679 11.0092C9.24899 10.5369 10.5154 9.32359 10.9486 7.44945C11.3202 5.84163 11.5071 4.18778 11.7269 2.54818C11.8402 1.70755 11.8457 0.852681 12.0051 0C12.06 0.819801 12.0853 1.64399 12.1777 2.4594C12.3371 3.87104 12.4833 5.28706 12.735 6.68335C13.1924 9.22714 14.7381 10.7933 17.2919 11.2142C19.2179 11.532 21.1737 11.6767 23.1173 11.8871C23.4043 11.9178 23.6978 11.8915 23.9891 11.8915C23.9935 11.9441 23.9968 11.9956 24.0012 12.0482C23.7561 12.0669 23.5098 12.08 23.2658 12.1063C21.3221 12.3145 19.3685 12.4592 17.437 12.7518C14.5567 13.1881 13.022 15.0162 12.6295 17.8109C12.3734 19.6325 12.2458 21.4715 12.0633 23.3029C12.0402 23.5331 12.038 23.7644 11.9061 23.9989C11.8501 23.1616 11.8237 22.3209 11.7324 21.488C11.5851 20.1487 11.4312 18.8083 11.2135 17.4789C10.7452 14.6139 8.95106 13.0697 6.14551 12.6707C4.35576 12.4165 2.54732 12.2871 0.746583 12.1085C0.500327 12.0844 0.249675 12.1052 0.0012207 12.1052C0.00232006 12.0548 0.00341941 12.0044 0.00451877 11.954L0.00341941 11.9551Z" fill="white" />
-                          </svg> */}
-
-                        <a href="">
-                          Triumph
-                        </a>
-                      </li>
-                      <li>
-
-
-                        <a href="">
-                          Delta Prompt
-                        </a>
-                      </li>
-                      <li>
-
-
-                        <a href="">
-                          Punta
-                        </a>
-                      </li>
-                      <li>
-
-                        <a href="">
-                          Crocodell
-                        </a>
-                      </li>
-
-                      {/* </marquee> */}
-                    </ul>
-
-
-
+                {
+                  footerItems?.length > 0 &&
+                  footerItems?.map((footer,index)=>(
+                    <div key={index} className="fir">
+                    <div className="widget">
+                      <h4 className="footer-title jk_tit">{footer?.parentItems?.title}</h4>
+                      {
+                        footer?.subItems?.length > 0 && 
+                        <ul className="list-2 uppercase font-opensans lopl"
+                        >
+                         {
+                          footer?.subItems?.map((subItem,index)=>(
+                            <li key={index}>
+                           
+    
+                            <a href={subItem?.link}>
+                              {subItem?.title}
+                            </a>
+                          </li>
+                          ))
+                         }
+                          
+                          {/* <li>
+    
+    
+                            <a href="">
+                              Delta Prompt
+                            </a>
+                          </li>
+                          <li>
+    
+    
+                            <a href="">
+                              Punta
+                            </a>
+                          </li>
+                          <li>
+    
+                            <a href="">
+                              Crocodell
+                            </a>
+                          </li> */}
+    
+                          {/* </marquee> */}
+                        </ul>
+                      }
+                    
+  
+  
+  
+                    </div>
                   </div>
-                </div>
+                  ))
+                }
+              
 
-                <div className="fir">
+                {/* <div className="fir">
                   <div className="widget">
                     <h4 className="footer-title jk_tit">Software</h4>
                     <ul className="list-2 uppercase font-opensans lopl"
                     >
-                      {/* <marquee
-                        behavior="scroll"
-                        direction="up"
-                        scrollamount={2}
-                        height="250px"
-                        onmouseover="this.stop()"
-                        onmouseout="this.start()"
-                      > */}
+                     
                       <li>
-                        {/* <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.00341941 11.9551C1.25998 11.8608 2.52204 11.8148 3.77091 11.6581C4.9813 11.5057 6.19498 11.3073 7.37679 11.0092C9.24899 10.5369 10.5154 9.32359 10.9486 7.44945C11.3202 5.84163 11.5071 4.18778 11.7269 2.54818C11.8402 1.70755 11.8457 0.852681 12.0051 0C12.06 0.819801 12.0853 1.64399 12.1777 2.4594C12.3371 3.87104 12.4833 5.28706 12.735 6.68335C13.1924 9.22714 14.7381 10.7933 17.2919 11.2142C19.2179 11.532 21.1737 11.6767 23.1173 11.8871C23.4043 11.9178 23.6978 11.8915 23.9891 11.8915C23.9935 11.9441 23.9968 11.9956 24.0012 12.0482C23.7561 12.0669 23.5098 12.08 23.2658 12.1063C21.3221 12.3145 19.3685 12.4592 17.437 12.7518C14.5567 13.1881 13.022 15.0162 12.6295 17.8109C12.3734 19.6325 12.2458 21.4715 12.0633 23.3029C12.0402 23.5331 12.038 23.7644 11.9061 23.9989C11.8501 23.1616 11.8237 22.3209 11.7324 21.488C11.5851 20.1487 11.4312 18.8083 11.2135 17.4789C10.7452 14.6139 8.95106 13.0697 6.14551 12.6707C4.35576 12.4165 2.54732 12.2871 0.746583 12.1085C0.500327 12.0844 0.249675 12.1052 0.0012207 12.1052C0.00232006 12.0548 0.00341941 12.0044 0.00451877 11.954L0.00341941 11.9551Z" fill="white" />
-                          </svg> */}
+                       
 
                         <a href="">
                           Cronus Pro
@@ -306,13 +303,13 @@ export default function Footer(footerProps) {
 
 
 
-                      {/* </marquee> */}
+                   
                     </ul>
 
 
 
                   </div>
-                </div>
+                </div> */}
 
                 <div className="fir margin-top25">
                   <div className="widget">

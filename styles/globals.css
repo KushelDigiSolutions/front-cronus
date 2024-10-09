@@ -2353,7 +2353,9 @@ color: #444444;
 .nav_img {
   margin-top: 30px;
 }
-
+.poll p{
+  display: none;
+}
 .nav_img ul {
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -635,6 +635,8 @@ export default function Navbar(props) {
     const [someopen5, setshowopen5] = useState(false);
     const [someopen6, setshowopen6] = useState(false);
 
+    console.log("navbarItems ", navbarItems);
+
     return (
       <>
         {/* desktop view  */}
