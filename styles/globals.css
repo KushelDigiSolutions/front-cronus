@@ -2480,6 +2480,11 @@ color: #444444;
   background-color: #F1F1F1;
 }
 
+.cert  span{
+  
+  color: #101010;
+}
+
 .tft {
   color: #101010;
 }

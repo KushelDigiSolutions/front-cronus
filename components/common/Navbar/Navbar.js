@@ -33,6 +33,7 @@ export default function Navbar(props) {
   // const eventCategory = pageProp.page_content?.events.category;
   const [start, setStart] = useState(1);
   const [start1, setStart1] = useState(1);
+  const [start3, setStart3] = useState(1);
   const [sus, setSus] = useState(false);
   const [sus1, setSus1] = useState(false);
   const [sus2, setSus2] = useState(false);
@@ -219,7 +220,6 @@ export default function Navbar(props) {
   };
 
   useEffect(() => {
-    console.log(userSession);
     if (userSession?.user.error === "invalid-version") {
       document.cookie =
         "access_token=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;";
@@ -458,172 +458,12 @@ export default function Navbar(props) {
       };
     }, [isDropdownOpen5]);
 
+
     const jok = {
       backgroundColor: "white !important",
     };
 
     const [showSidebar, setShowSidebar] = useState(false);
-
-    const data = [
-      {
-        title: "Teleprompter",
-        subtitle: [
-          {
-            title: "Triumph",
-            subtitle: [
-              {
-                title: "Triumph 24",
-              },
-              {
-                title: "Triumph 22",
-              },
-              {
-                title: "Triumph 21",
-              },
-              {
-                title: "Triumph 17",
-              },
-              {
-                title: "Triumph 15",
-              },
-            ],
-          },
-          {
-            title: "Delta Prompt ",
-            subtitle: [
-              {
-                title: "Delta Prompt 19",
-              },
-              {
-                title: "Delta Prompt 17",
-              },
-              {
-                title: "Delta Prompt 15",
-              },
-            ],
-          },
-          {
-            title: "Punta ",
-            subtitle: [
-              {
-                title: "Punta 17",
-              },
-              {
-                title: "Punta 15",
-              },
-            ],
-          },
-          {
-            title: "Crocodell",
-            subtitle: [
-              {
-                title: "Crocodell 19",
-              },
-            ],
-          },
-        ],
-      },
-      {
-        title: "Software",
-        subtitle: [
-          {
-            title: "Cronus Pro",
-            subtitle: [
-              {
-                title: "Mac ",
-              },
-              {
-                title: "Window",
-              },
-            ],
-          },
-          {
-            title: "Cronus Lite ",
-            subtitle: [
-              {
-                title: "Window",
-              },
-            ],
-          },
-        ],
-      },
-      {
-        title: "Pedestal/ Tripod / Dolly",
-        subtitle: [
-          {
-            title: "Cronus Pro",
-            subtitle: [
-              {
-                title: "Mac ",
-              },
-              {
-                title: "Window",
-              },
-            ],
-          },
-          {
-            title: "Cronus Lite ",
-            subtitle: [
-              {
-                title: "Window",
-              },
-            ],
-          },
-        ],
-      },
-      {
-        title: "Telephone Hybrid",
-        subtitle: [
-          {
-            title: "Cronus Pro",
-            subtitle: [
-              {
-                title: "Mac ",
-              },
-              {
-                title: "Window",
-              },
-            ],
-          },
-          {
-            title: "Cronus Lite ",
-            subtitle: [
-              {
-                title: "Window",
-              },
-            ],
-          },
-        ],
-      },
-      {
-        title: "Video Light",
-        subtitle: [
-          {
-            title: "Cronus Pro",
-            subtitle: [
-              {
-                title: "Mac ",
-              },
-              {
-                title: "Window",
-              },
-            ],
-          },
-          {
-            title: "Cronus Lite ",
-            subtitle: [
-              {
-                title: "Window",
-              },
-            ],
-          },
-        ],
-      },
-      {
-        title: "Contact Us",
-      },
-    ];
-
     const [showFirstlvl, setShowFirLvl] = useState(false);
     const [showSecLvl, setShowSecLvl] = useState(false);
 
@@ -635,6 +475,11 @@ export default function Navbar(props) {
     const [someopen5, setshowopen5] = useState(false);
     const [someopen6, setshowopen6] = useState(false);
 
+    const [currccert, setcurrcert] = useState(0);
+    const [start, setStart] = useState(1);
+
+
+
     console.log("navbarItems ", navbarItems);
 
     return (
@@ -643,6 +488,7 @@ export default function Navbar(props) {
         <div>
           <nav className="navbars">
             <div className="nav_test">
+
               <div className="nav_logo">
                 <Link href="/">
                   <img src="../images/sells.svg" alt="" />
@@ -651,13 +497,22 @@ export default function Navbar(props) {
 
               <div className="ul_nav">
                 <ul className="ul_sofa">
-                  <li ref={dropdownRef} className="sog">
+
+                {
+                  navbarItems?.map((item1 , index1)=>(
+
+                 <>
+               
+{
+  index1 === 0  &&
+
+                  <li key={index1} ref={dropdownRef} className="sog">
                     <div
                       className={`normailcs ${isDropdownOpen && "makecolor"}`}
                       onClick={handleDropdownToggle}
                       href=""
                     >
-                      Teleprompter
+                      {item1?.parentItems?.title}
                       {isDropdownOpen && (
                         <svg
                           className="soka"
@@ -717,32 +572,26 @@ export default function Navbar(props) {
                       )}
                     </div>
 
+
                     {isDropdownOpen && (
                       <div className="navItem">
-                        <div className="sidebar_nav1">
-                          <ul className="certify">
-                            <li id="one" onClick={tab1} className="cert">
-                              <span id="ek" className="sft tft">
-                                Triumph
-                              </span>
-                            </li>
-                            <li id="two" onClick={tab2}>
-                              <span id="ek1" className="sft">
-                                Delta Prompt
-                              </span>
-                            </li>
-                            <li id="three" onClick={tab3}>
-                              <span id="ek2" className="sft">
-                                Punta
-                              </span>
-                            </li>
 
-                            <li id="four" onClick={tab4}>
-                              <span id="ek3" className="sft">
-                                Crocodell
-                              </span>
-                            </li>
-                          </ul>
+                        <div className="sidebar_nav1">
+                        <ul className="certify">
+                                      {
+                                        item1?.subItems?.length > 0 &&
+                                        item1?.subItems?.map((ls, ind) => (
+                                          <li key={ind} id="one" onClick={() => {
+                                            setcurrcert(ind);
+                                            setStart(ind + 1);
+
+                                          }} className={`${currccert === ind && "cert"}`} >
+                                            <span className="sft">{ls?.title}</span>
+                                          </li>
+                                        ))
+                                      }
+
+                                    </ul>
                         </div>
 
                         <div className="sidebar_nav2">
@@ -1077,18 +926,25 @@ export default function Navbar(props) {
                                 </div>
                               </div>
                             </div>
+
                           )}
                         </div>
                       </div>
                     )}
                   </li>
 
+
+                  }
+
+                {
+                  index1 === 1 &&
+                
                   <li ref={dropdownRef2} className="soki">
                     <div
                       onClick={handleDropdownToggle2}
                       className={`normailcs ${isDropdownOpen2 && "makecolor"}`}
                     >
-                      Software
+                       {item1?.parentItems?.title}
                       {isDropdownOpen2 && (
                         <svg
                           className="soka"
@@ -1151,16 +1007,20 @@ export default function Navbar(props) {
                       <div className="navItem">
                         <div className="sidebar_nav1">
                           <ul className="certify">
-                            <li id="one" onClick={fab1} className="cert">
-                              <span id="ek" className="sft tft">
-                                Cronus Pro
-                              </span>
-                            </li>
-                            <li id="two" onClick={fab2}>
-                              <span id="ek1" className="sft">
-                                Cronus Lite
-                              </span>
-                            </li>
+
+{
+                                        item1?.subItems?.length > 0 &&
+                                        item1?.subItems?.map((ls, ind) => (
+                                          <li key={ind} id="one" onClick={() => {
+                                            setcurrcert(ind);
+                                            setStart1(ind + 1);
+
+                                          }} className={`${currccert === ind && "cert"}`} >
+                                            <span className="sft">{ls?.title}</span>
+                                          </li>
+                                        ))
+                                      }
+                            
 
                           </ul>
                         </div>
@@ -1321,12 +1181,18 @@ export default function Navbar(props) {
                     )}
                   </li>
 
+  }
+
+  {
+    index1 === 2 && 
+  
+
                   <li ref={dropdownRef5} className="soki">
                     <div
                       onClick={handleDropdownToggle5}
                       className={`normailcs ${isDropdownOpen5 && "makecolor"}`}
                     >
-                      Pedestal/ Tripod / Dolly
+                       {item1?.parentItems?.title}
                       {isDropdownOpen5 && (
                         <svg
                           className="soka"
@@ -1388,18 +1254,27 @@ export default function Navbar(props) {
                     {isDropdownOpen5 && (
                       <div className="navItem">
                         <div className="sidebar_nav1">
-                          <ul className="certify">
-                            <li id="one" onClick={fab1} className="cert">
-                              <span id="ek" className="sft tft">
-                                Kratos
-                              </span>
-                            </li>
+                   
 
-                          </ul>
+                               <ul className="certify">
+                                      {
+                                        item1?.subItems?.length > 0 &&
+                                        item1?.subItems?.map((ls, ind) => (
+                                          <li key={ind} id="one" onClick={() => {
+                                            setcurrcert(ind);
+                                            setStart3(ind + 1);
+
+                                          }} className={`${currccert === ind && "cert"}`} >
+                                            <span className="sft">{ls?.title}</span>
+                                          </li>
+                                        ))
+                                      }
+
+                                    </ul>
                         </div>
 
                         <div className="sidebar_nav2 tight_bar">
-                          {start1 === 1 && (
+                          {start3 === 1 && (
                             <div>
                               <div className="some addgaps">
                                 <span>Movies</span>
@@ -1728,16 +1603,11 @@ export default function Navbar(props) {
                     )}
                   </li>
 
-                  <li>
-                    <Link
-                      href={"/aboutus"}
-                      className={`${currentPath === "/aboutus" ? "makecolor2" : ""
-                        }`}
-                    >
-                      {" "}
-                      Telephone Hybrid
-                    </Link>
-                  </li>
+  }
+
+  {
+    index1 === 3 && 
+  
 
                   <li>
                     <Link
@@ -1746,9 +1616,31 @@ export default function Navbar(props) {
                         }`}
                     >
                       {" "}
-                      Video Light{" "}
+                      {item1?.parentItems?.title}
                     </Link>
                   </li>
+
+                      }
+
+                      {
+                        index1 === 4 && 
+                    
+                  <li>
+                    <Link
+                      href={"/aboutus"}
+                      className={`${currentPath === "/aboutus" ? "makecolor2" : ""
+                        }`}
+                    >
+                      {" "}
+                      {item1?.parentItems?.title}
+                    </Link>
+                  </li>
+
+                      }
+
+
+{
+  index1 === 5 &&
 
                   <li className="contactusbutton">
                     <Link
@@ -1757,14 +1649,22 @@ export default function Navbar(props) {
                         } `}
                     >
                       {" "}
-                      <span>Contact Us</span>{" "}
+                      <span> {item1?.parentItems?.title}</span>{" "}
                     </Link>
                   </li>
+
+                      }
+
+                  </>
+))
+}
 
                   <li className="">
                     {/* <Link href={"/contact"} className={`${currentPath === "/contact" ? "makecolor2" : ""} `}>  </Link> */}
                     <IoSearch className="IoSearch" />
                   </li>
+
+
 
                 </ul>
               </div>
@@ -1779,12 +1679,12 @@ export default function Navbar(props) {
 
               {showSidebar && (
                 <div className="showbarwrap">
-                  {data?.map((item1, index) => (
-                    <div className="whoitemwrap">
+                  {navbarItems?.map((item1, index) => (
+                    <div key={index} className="whoitemwrap">
 
-                      <div key={index} className="singlesideba firstlayer">
-                        <h3>{item1?.title}</h3>
-                        {item1?.subtitle && (
+                      <div  className="singlesideba firstlayer">
+                        <h3>{item1?.parentItems?.title}</h3>
+                        {item1?.subItems?.length > 0 && (
                           <MdKeyboardArrowDown onClick={() => {
                             if (showFirstlvl === index) {
                               setShowFirLvl(false);
@@ -1797,12 +1697,12 @@ export default function Navbar(props) {
                         )}
                       </div>
 
-                      {(item1?.subtitle && showFirstlvl === index) &&
-                        item1?.subtitle?.map((item2, index) => (
-                          <div>
-                            <div key={index} className="singlesideba secoondlayer">
+                      {(item1?.subItems && showFirstlvl === index) &&
+                        item1?.subItems?.map((item2, index) => (
+                          <div key={index}>
+                            <div  className="singlesideba secoondlayer">
                               <h3>{item2?.title}</h3>
-                              {item2?.subtitle && (
+                              {item2?.childrenItems && (
                                 <MdKeyboardArrowDown onClick={() => {
                                   if (showSecLvl === index) {
                                     setShowSecLvl(false);
@@ -1814,8 +1714,8 @@ export default function Navbar(props) {
                               )}
                             </div>
 
-                            {(item2?.subtitle && showSecLvl === index) &&
-                              item2?.subtitle?.map((item3, index) => (
+                            {(item2?.childrenItems && showSecLvl === index) &&
+                              item2?.childrenItems?.map((item3, index) => (
                                 <div key={index} className="singlesideba thirdlayer">
                                   <h3>{item3?.title}</h3>
                                 </div>
@@ -1829,6 +1729,7 @@ export default function Navbar(props) {
                   ))}
                 </div>
               )}
+
             </div>
           </nav>
         </div>
