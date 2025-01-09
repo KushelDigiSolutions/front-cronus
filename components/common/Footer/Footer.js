@@ -158,7 +158,7 @@ export default function Footer(footerProps) {
           <div className="footer-top">
             <div className="container amrgin-left10px">
 
-              <div className="row rwing">
+              <div className="rwing">
 
                 <div className='fir'>
                   <div className="widget widget_getintuch" height="240px">
@@ -327,7 +327,7 @@ export default function Footer(footerProps) {
                         </defs>
                       </svg>
 
-                      <p>130 , FIE , Second Floor , <br /> Patparganj Industrial <br /> Area , Delhi 110092</p>
+                      <p>130 , Second Floor ,  FIE <br /> Patparganj Industrial <br /> Area , Delhi 110092</p>
                     </div>
 
                     <div className='test_ft'>
