@@ -2024,10 +2024,10 @@ export default function Navbar(props) {
                     ))
                   }
 
-                  <li className="">
-                    {/* <Link href={"/contact"} className={`${currentPath === "/contact" ? "makecolor2" : ""} `}>  </Link> */}
+                  {/* <li className="">
+                   
                     <IoSearch className="IoSearch" />
-                  </li>
+                  </li> */}
 
 
 
