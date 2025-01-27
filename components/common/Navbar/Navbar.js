@@ -1531,7 +1531,7 @@ export default function Navbar(props) {
                                                   setshowopen4(false)
                                                 }}
                                               >
-                                                Pan Bar <MdKeyboardArrowDown />
+                                                {/* Pan Bar <MdKeyboardArrowDown /> */}
 
                                               </Link>
 
