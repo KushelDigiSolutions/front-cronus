@@ -1,20 +1,4 @@
 import React from 'react'
-import style from "../../../pages/css/footer.module.scss";
-import Link from 'next/link';
-import FaceBookSocial from '../svg/social/facebook';
-import LinkedinSocial from '../svg/social/linkedin';
-import InstagramSocial from '../svg/social/instagram';
-import TwitterSocial from '../svg/social/twitter';
-import moment from 'moment';
-import Image from 'next/image';
-// import ins1 from '../../../public/images/fb.svg';
-// import ins2 from '../../../public/images/twitter.svg';
-// import ins3 from '../../../public/images/linkedin.svg';
-// import ins4 from '../../../public/images/insta.svg'
-
-import twitter from '../../../components/img/twitter.svg'
-import { subtle } from 'crypto';
-
 export default function Footer(footerProps) {
   if (typeof footerProps.footerProps == "undefined" || footerProps.footerProps == false) { return ""; }
   else {
@@ -31,6 +15,8 @@ export default function Footer(footerProps) {
       "--footerItemColor": footerData?.parent_text_color,
       "--footerItemHoverColor": footerData?.parent_text_hover_color
     }
+
+    // console.log(itemsSetting);
 
     const stop = (e) => {
       document.getElementById("jj").style.scrollBehavior = "none"
@@ -422,8 +408,7 @@ export default function Footer(footerProps) {
 
 
 
-        </footer >
-
+        </footer>
       </>
 
     )

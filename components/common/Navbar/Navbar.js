@@ -698,7 +698,7 @@ export default function Navbar(props) {
                                         </div>
                                         <div className="logo_img">
                                           <div style={styleoff1} className="softisf">
-                                            <p style={styleoff1}>Triumph 19</p>
+                                            <p style={styleoff1}>Triumph</p>
                                             <img
                                               style={styleoff1}
                                               src="./images/sevas.svg"
@@ -706,7 +706,7 @@ export default function Navbar(props) {
                                             />
                                           </div>
                                           <div style={styleOff} className="softisf">
-                                            <p style={styleOff}>Triumph 19</p>
+                                            <p style={styleOff}>Triumph</p>
                                             <img
                                               style={styleOff}
                                               src="./images/sevas.svg"
@@ -714,7 +714,7 @@ export default function Navbar(props) {
                                             />
                                           </div>
                                           <div style={styleoff2} className="softisf">
-                                            <p style={styleoff2}>Triumph 21</p>
+                                            <p style={styleoff2}>Triumph</p>
                                             <img
                                               style={styleoff2}
                                               src="./images/sevas.svg"
@@ -722,26 +722,32 @@ export default function Navbar(props) {
                                             />
                                           </div>
                                           <div style={styleoff3} className="softisf">
-                                            <p style={styleoff3}>Triumph 19</p>
+                                            {/* <p style={styleoff3}>Triumph 19</p> */}
                                             <img
                                               style={styleoff3}
-                                              src="./images/sevas.svg"
+                                              width="350"
+                                              height="350"
+                                              src="https://res.cloudinary.com/dgif730br/image/upload/v1737970687/27277_rqm45m.jpg"
                                               alt=""
                                             />
                                           </div>
                                           <div style={styleoff4} className="softisf">
-                                            <p style={styleoff4}>Triumph 17</p>
+                                            {/* <p style={styleoff4}>Triumph 17</p> */}
                                             <img
                                               style={styleoff4}
-                                              src="./images/sevas.svg"
+                                              width="350"
+                                              height="350"
+                                              src="https://res.cloudinary.com/dgif730br/image/upload/v1737971406/Triumph17-2-removebg-preview_1_fp9iem.png"
                                               alt=""
                                             />
                                           </div>
                                           <div style={styleoff5} className="softisf">
-                                            <p style={styleoff5}>Triumph 15</p>
+                                            {/* <p style={styleoff5}>Triumph 15</p> */}
                                             <img
                                               style={styleoff5}
-                                              src="./images/sevas.svg"
+                                              width="350"
+                                              height="350"
+                                              src="https://res.cloudinary.com/dgif730br/image/upload/v1737971745/Triumph15_Picture1_cvlgut.jpg"
                                               alt=""
                                             />
                                           </div>
@@ -803,7 +809,7 @@ export default function Navbar(props) {
                                         </div>
                                         <div className="logo_img">
                                           <div style={styleoff1} className="softisf">
-                                            <p style={styleoff1}>Delta Prompt 19</p>
+                                            <p style={styleoff1}>Delta Prompt</p>
                                             <img
                                               style={styleoff1}
                                               src="./images/sevas.svg"
@@ -819,18 +825,22 @@ export default function Navbar(props) {
                                             />
                                           </div>
                                           <div style={styleoff2} className="softisf">
-                                            <p style={styleoff2}>Delta Prompt 17</p>
+                                            {/* <p style={styleoff2}>Delta Prompt 17</p> */}
                                             <img
                                               style={styleoff2}
-                                              src="./images/sevas.svg"
+                                              width="350"
+                                              height="350"
+                                              src="https://res.cloudinary.com/dgif730br/image/upload/v1737972034/delta_prompt17_g9arwa_o0bsqw.png"
                                               alt=""
                                             />
                                           </div>
                                           <div style={styleoff3} className="softisf">
-                                            <p style={styleoff3}>Delta Prompt 15</p>
+                                            {/* <p style={styleoff3}>Delta Prompt 15</p> */}
                                             <img
                                               style={styleoff3}
-                                              src="./images/sevas.svg"
+                                              width="350"
+                                              height="350"
+                                              src="https://res.cloudinary.com/dgif730br/image/upload/v1737972153/pedistal_150_yasmhr_iepgoo.jpg"
                                               alt=""
                                             />
                                           </div>
@@ -877,7 +887,7 @@ export default function Navbar(props) {
                                         </div>
                                         <div className="logo_img">
                                           <div style={styleji1} className="softisf">
-                                            <p style={styleji1}>Punta 17</p>
+                                            <p style={styleji1}>Punta</p>
                                             <img
                                               style={styleji1}
                                               src="./images/sevas.svg"
@@ -885,18 +895,22 @@ export default function Navbar(props) {
                                             />
                                           </div>
                                           <div style={styleji} className="softisf">
-                                            <p style={styleji}>Punta 17</p>
+                                            {/* <p style={styleji}>Punta 17</p> */}
                                             <img
                                               style={styleji}
-                                              src="./images/sevas.svg"
+                                              width="350"
+                                              height="350"
+                                              src="https://res.cloudinary.com/dgif730br/image/upload/v1737972283/punta17_xwzvlp_kafsnt.png"
                                               alt=""
                                             />
                                           </div>
                                           <div style={styleji2} className="softisf">
-                                            <p style={styleji2}>Punta 15</p>
+                                            {/* <p style={styleji2}>Punta 15</p> */}
                                             <img
                                               style={styleji2}
-                                              src="./images/sevas.svg"
+                                              width="350"
+                                              height="350"
+                                              src="https://res.cloudinary.com/dgif730br/image/upload/v1737972416/Punta15___New_Picture_bhwar8.png"
                                               alt=""
                                             />
                                           </div>
@@ -930,7 +944,7 @@ export default function Navbar(props) {
                                         </div>
                                         <div className="logo_img">
                                           <div style={styleoff1} className="softisf">
-                                            <p style={styleoff1}>Crocodell 19</p>
+                                            <p style={styleoff1}>Crocodell</p>
                                             <img
                                               style={styleoff1}
                                               src="./images/sevas.svg"
@@ -1086,7 +1100,7 @@ export default function Navbar(props) {
                                         </div>
                                         <div className="logo_img">
                                           <div style={styleoff1} className="softisf">
-                                            <p style={styleoff1}>Mac</p>
+                                            <p style={styleoff1}>Cronus Pro</p>
                                             <img
                                               style={styleoff1}
                                               src="./images/sevas.svg"
@@ -1094,18 +1108,22 @@ export default function Navbar(props) {
                                             />
                                           </div>
                                           <div style={styleOff} className="softisf">
-                                            <p style={styleOff}>Mac</p>
+                                            {/* <p style={styleOff}>Mac</p> */}
                                             <img
                                               style={styleOff}
-                                              src="./images/sevas.svg"
+                                              width="350"
+                                              height="350"
+                                              src="https://res.cloudinary.com/dgif730br/image/upload/v1737972834/CRONUS_PRO_MAC_b1ev6a_q0jpgf.png"
                                               alt=""
                                             />
                                           </div>
                                           <div style={styleoff2} className="softisf">
-                                            <p style={styleoff2}>Window</p>
+                                            {/* <p style={styleoff2}>Window</p> */}
                                             <img
                                               style={styleoff2}
-                                              src="./images/sevas.svg"
+                                              height="350"
+                                              width="350"
+                                              src="https://res.cloudinary.com/dgif730br/image/upload/v1737973044/CRONUS_PRO_WINDOWS_kq2oxs_rvhbif.png"
                                               alt=""
                                             />
                                           </div>
@@ -1147,7 +1165,7 @@ export default function Navbar(props) {
                                         </div>
                                         <div className="logo_img">
                                           <div style={styleoff1} className="softisf">
-                                            <p style={styleoff1}>Window</p>
+                                            <p style={styleoff1}>Cronus Lite</p>
                                             <img
                                               style={styleoff1}
                                               src="./images/sevas.svg"
@@ -1155,10 +1173,12 @@ export default function Navbar(props) {
                                             />
                                           </div>
                                           <div style={styleOff} className="softisf">
-                                            <p style={styleOff}>Window</p>
+                                            {/* <p style={styleOff}>Window</p> */}
                                             <img
                                               style={styleOff}
-                                              src="./images/sevas.svg"
+                                              height="350"
+                                              width="350"
+                                              src="https://res.cloudinary.com/dgif730br/image/upload/v1737973044/CRONUS_PRO_WINDOWS_kq2oxs_rvhbif.png"
                                               alt=""
                                             />
                                           </div>
@@ -2024,7 +2044,7 @@ export default function Navbar(props) {
                     ))
                   }
 
-                 
+
 
 
 
@@ -2046,7 +2066,7 @@ export default function Navbar(props) {
                     <div key={index} className="whoitemwrap">
 
                       <div className="singlesideba firstlayer">
-                      <a href={item1?.parentItems?.link}><h3>{item1?.parentItems?.title}</h3></a>
+                        <a href={item1?.parentItems?.link}><h3>{item1?.parentItems?.title}</h3></a>
                         {item1?.subItems?.length > 0 && (
                           <MdKeyboardArrowDown onClick={() => {
                             if (showFirstlvl === index) {
@@ -2064,7 +2084,7 @@ export default function Navbar(props) {
                         item1?.subItems?.map((item2, index) => (
                           <div key={index}>
                             <div className="singlesideba secoondlayer">
-                             <a href={item2?.link}><h3>{item2?.title}</h3></a>
+                              <a href={item2?.link}><h3>{item2?.title}</h3></a>
                               {item2?.childrenItems && (
                                 <MdKeyboardArrowDown onClick={() => {
                                   if (showSecLvl === index) {
@@ -2082,7 +2102,7 @@ export default function Navbar(props) {
                             {(item2?.childrenItems && showSecLvl === index) &&
                               item2?.childrenItems?.map((item3, index) => (
                                 <div key={index} className="singlesideba thirdlayer">
-                                 <a href={item3?.link}><h3>{item3?.title}</h3></a>
+                                  <a href={item3?.link}><h3>{item3?.title}</h3></a>
                                   {/* <h3>{item3?.title}</h3> */}
                                 </div>
                               ))}
