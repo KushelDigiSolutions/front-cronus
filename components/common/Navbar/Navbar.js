@@ -817,10 +817,12 @@ export default function Navbar(props) {
                                             />
                                           </div>
                                           <div style={styleOff} className="softisf">
-                                            <p style={styleOff}>Delta Prompt 19</p>
+                                            {/* <p style={styleOff}>Delta Prompt 19</p> */}
                                             <img
                                               style={styleOff}
-                                              src="./images/sevas.svg"
+                                               width="350"
+                                              height="350"
+                                              src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1738147041/27277_s0ycfw.jpg"
                                               alt=""
                                             />
                                           </div>
@@ -955,7 +957,9 @@ export default function Navbar(props) {
                                             <p style={styleOff}>Crocodell 19</p>
                                             <img
                                               style={styleOff}
-                                              src="./images/sevas.svg"
+                                               width="350"
+                                              height="350"
+                                              src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1738147041/27277_s0ycfw.jpg"
                                               alt=""
                                             />
                                           </div>
@@ -1531,7 +1535,7 @@ export default function Navbar(props) {
                                                   setshowopen4(false)
                                                 }}
                                               >
-                                                Pan Bar <MdKeyboardArrowDown />
+                                                {/* Pan Bar <MdKeyboardArrowDown /> */}
 
                                               </Link>
 
@@ -1562,45 +1566,53 @@ export default function Navbar(props) {
                                             />
                                           </div>
                                           <div style={styleOff} className="softisf">
-                                            <p style={styleOff}>Tripod Kits</p>
+                                            {/* <p style={styleOff}>Tripod Kits</p> */}
                                             <img
                                               style={styleOff}
-                                              src="./images/sevas.svg"
+                                               height="350"
+                                              width="350"
+                                              src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1738149003/kartos_MV45g-AL-removebg-preview_xo2ekl.png"
                                               alt=""
                                             />
                                           </div>
                                           <div style={styleoff2} className="softisf">
-                                            <p style={styleoff2}>Pedestal </p>
+                                            {/* <p {style={styleoff2}>Pedestal }</p> */}
                                             <img
                                               style={styleoff2}
-                                              src="./images/sevas.svg"
+                                               height="350"
+                                              width="350"
+                                              src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1738147711/pedistal_150_yasmhr_kxhimq.jpg"
                                               alt=""
                                             />
                                           </div>
                                           <div style={styleoff3} className="softisf">
-                                            <p style={styleoff3}>Tripod Head</p>
+                                            {/* <p style={styleoff3}>Tripod Head</p> */}
                                             <img
                                               style={styleoff3}
-                                              src="./images/sevas.svg"
+                                                height="350"
+                                              width="350"
+                                              src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1738149309/EN-8-removebg-preview_prsdou.png"
                                               alt=""
                                             />
                                           </div>
                                           <div style={styleoff4} className="softisf">
-                                            <p style={styleoff4}>Dolly</p>
+                                            {/* <p style={styleoff4}>Dolly</p> */}
                                             <img
                                               style={styleoff4}
-                                              src="./images/sevas.svg"
+                                                height="350"
+                                              width="350"
+                                              src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1738147612/KRATOS_DOLLY_D50_2_1_oyma3r.jpg"
                                               alt=""
                                             />
                                           </div>
-                                          <div style={styleoff5} className="softisf">
+                                          {/* <div style={styleoff5} className="softisf">
                                             <p style={styleoff5}>Pan Bar</p>
                                             <img
                                               style={styleoff5}
                                               src="./images/sevas.svg"
                                               alt=""
                                             />
-                                          </div>
+                                          </div> */}
                                         </div>
 
                                       </div>
@@ -1789,34 +1801,42 @@ export default function Navbar(props) {
                                             />
                                           </div>
                                           <div style={styleOff} className="softisf">
-                                            <p style={styleOff}>Kryptic2</p>
+                                            {/* <p style={styleOff}>Kryptic2</p> */}
                                             <img
                                               style={styleOff}
-                                              src="./images/sevas.svg"
-                                              alt=""
+                                               height="350"
+                                              width="350"
+                                              src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1738146040/rvncshtg7qubzuxxb9ok.png"
+                                              
                                             />
                                           </div>
                                           <div style={styleoff2} className="softisf">
-                                            <p style={styleoff2}>Kryptic2 Mini</p>
+                                            {/* <p style={styleoff2}>Kryptic2 Mini</p> */}
                                             <img
                                               style={styleoff2}
-                                              src="./images/sevas.svg"
+                                               height="350"
+                                              width="350"
+                                              src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1738146132/Kryptic_2_Mini__Back_aidasx.png"
                                               alt=""
                                             />
                                           </div>
                                           <div style={styleoff3} className="softisf">
-                                            <p style={styleoff3}>Lunar</p>
+                                            {/* <p style={styleoff3}>Lunar</p> */}
                                             <img
                                               style={styleoff3}
-                                              src="./images/sevas.svg"
+                                                 height="350"
+                                              width="350"
+                                              src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1738146746/T-Hyb_Lunar_Telephone_Hybrid_Single_Ch-5_1_jvlnc5.jpg"
                                               alt=""
                                             />
                                           </div>
                                           <div style={styleoff4} className="softisf">
-                                            <p style={styleoff4}>Glue 3.5</p>
+                                            {/* <p style={styleoff4}>Glue 3.5</p> */}
                                             <img
                                               style={styleoff4}
-                                              src="./images/sevas.svg"
+                                                   height="350"
+                                              width="350"
+                                              src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1738146747/T-Hyb_Glue_3.5_Front-removebg-preview_qwlexv.png"
                                               alt=""
                                             />
                                           </div>
@@ -1965,7 +1985,7 @@ export default function Navbar(props) {
                                         </div>
                                         <div className="logo_img">
                                           <div style={styleoff1} className="softisf">
-                                            <p style={styleoff1}>110W</p>
+                                            <p style={styleoff1}>LumaLight</p>
                                             <img
                                               style={styleoff1}
                                               src="./images/sevas.svg"
@@ -1973,10 +1993,12 @@ export default function Navbar(props) {
                                             />
                                           </div>
                                           <div style={styleOff} className="softisf">
-                                            <p style={styleOff}>110W</p>
+                                            {/* <p style={styleOff}>110W</p> */}
                                             <img
                                               style={styleOff}
-                                              src="./images/sevas.svg"
+                                               height="350"
+                                              width="350"
+                                              src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1738147041/27277_s0ycfw.jpg"
                                               alt=""
                                             />
                                           </div>
