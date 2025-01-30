@@ -698,10 +698,12 @@ export default function Navbar(props) {
                                         </div>
                                         <div className="logo_img">
                                           <div style={styleoff1} className="softisf">
-                                            <p style={styleoff1}>Triumph</p>
+                                            {/* <p style={styleoff1}>Triumph</p> */}
                                             <img
                                               style={styleoff1}
-                                              src="./images/sevas.svg"
+                                                width="350"
+                                              height="350"
+                                              src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1738251781/Triumph15_Picture1_1_2_jkihxk.jpg"
                                               alt=""
                                             />
                                           </div>
@@ -1558,10 +1560,12 @@ export default function Navbar(props) {
 
                                         <div className="logo_img">
                                           <div style={styleoff1} className="softisf">
-                                            <p style={styleoff1}>Kratos</p>
+                                            {/* <p style={styleoff1}>Kratos</p> */}
                                             <img
                                               style={styleoff1}
-                                              src="./images/sevas.svg"
+                                              height="350"
+                                              width="350"
+                                              src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1738252827/kartos_MV45g-AL-removebg-preview_2_ig3gz3.png"
                                               alt=""
                                             />
                                           </div>
