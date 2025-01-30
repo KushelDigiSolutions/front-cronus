@@ -701,10 +701,10 @@ export default function Navbar(props) {
                                             {/* <p style={styleoff1}>Triumph</p> */}
                                             <img
                                               style={styleoff1}
-                                                width="350"
-                                              height="350"
-                                              src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1738251781/Triumph15_Picture1_1_2_jkihxk.jpg"
-                                              alt=""
+                                              width="350"
+                                            height="350"
+                                            src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1738251781/Triumph15_Picture1_1_2_jkihxk.jpg"
+                                            alt=""
                                             />
                                           </div>
                                           <div style={styleOff} className="softisf">
