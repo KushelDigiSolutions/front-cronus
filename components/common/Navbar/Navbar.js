@@ -811,10 +811,12 @@ export default function Navbar(props) {
                                         </div>
                                         <div className="logo_img">
                                           <div style={styleoff1} className="softisf">
-                                            <p style={styleoff1}>Delta Prompt</p>
+                                            {/* <p style={styleoff1}>Delta Prompt</p> */}
                                             <img
                                               style={styleoff1}
-                                              src="./images/sevas.svg"
+                                               width="350"
+                                              height="350"
+                                              src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1738230519/27277_xfwdub.jpg"
                                               alt=""
                                             />
                                           </div>
@@ -891,10 +893,12 @@ export default function Navbar(props) {
                                         </div>
                                         <div className="logo_img">
                                           <div style={styleji1} className="softisf">
-                                            <p style={styleji1}>Punta</p>
+                                            {/* <p style={styleji1}>Punta</p> */}
                                             <img
                                               style={styleji1}
-                                              src="./images/sevas.svg"
+                                               width="350"
+                                              height="350"
+                                              src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1738230519/27277_xfwdub.jpg"
                                               alt=""
                                             />
                                           </div>
@@ -951,7 +955,9 @@ export default function Navbar(props) {
                                             <p style={styleoff1}>Crocodell</p>
                                             <img
                                               style={styleoff1}
-                                              src="./images/sevas.svg"
+                                                height="350"
+                                              width="350"
+                                              src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1738230519/27277_xfwdub.jpg"
                                               alt=""
                                             />
                                           </div>
@@ -1109,7 +1115,9 @@ export default function Navbar(props) {
                                             <p style={styleoff1}>Cronus Pro</p>
                                             <img
                                               style={styleoff1}
-                                              src="./images/sevas.svg"
+                                               width="350"
+                                              height="350"
+                                              src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1738230519/27277_xfwdub.jpg"
                                               alt=""
                                             />
                                           </div>
@@ -1174,7 +1182,9 @@ export default function Navbar(props) {
                                             <p style={styleoff1}>Cronus Lite</p>
                                             <img
                                               style={styleoff1}
-                                              src="./images/sevas.svg"
+                                               height="350"
+                                              width="350"
+                                              src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1738230519/27277_xfwdub.jpg"
                                               alt=""
                                             />
                                           </div>
@@ -1989,10 +1999,12 @@ export default function Navbar(props) {
                                         </div>
                                         <div className="logo_img">
                                           <div style={styleoff1} className="softisf">
-                                            <p style={styleoff1}>LumaLight</p>
+                                            {/* <p style={styleoff1}>LumaLight</p> */}
                                             <img
                                               style={styleoff1}
-                                              src="./images/sevas.svg"
+                                                height="350"
+                                              width="350"
+                                              src="https://res.cloudinary.com/dd9tagtiw/image/upload/v1738596051/Light_White_x3xav7.png"
                                               alt=""
                                             />
                                           </div>
