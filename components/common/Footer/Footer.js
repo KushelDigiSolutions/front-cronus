@@ -341,7 +341,7 @@ export default function Footer(footerProps) {
                         </defs>
                       </svg>
 
-                      <p>sales@cronuspro.in</p>
+                      <p>export@cronuspro.co.in</p>
                     </div>
 
                   </div>
