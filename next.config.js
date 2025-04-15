@@ -2,9 +2,9 @@
 const nextConfig = {
   env: {
     NEXTAUTH_SECRET:"Cronus-pro",
-    NEXTAUTH_URL:"https://front.cronuspro.in/",
+    NEXTAUTH_URL:"https://cronuspro.in/",
     next:{
-      api_url:"https://front.cronuspro.in/api/v1/"
+      api_url:"https://cronuspro.in/api/v1/"
     },
 
     server : {

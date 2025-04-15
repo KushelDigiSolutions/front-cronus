@@ -3006,7 +3006,9 @@ button {
 .swiper-button-next svg rect:hover {
   fill: #EA9419 !important;
 }
-
+.about_left button{
+  margin-bottom: 30px;
+}
 @media only screen and (max-width:1190px) {
   .nav_img ul li {
     padding: 10px 12px !important;
